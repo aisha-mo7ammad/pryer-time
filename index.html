@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> مواقيت الصلاة</title>
+
+    <!-- Font Libraries -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="background">
+
+        <div id="content">
+            
+            <div id="city-title">
+                <div>
+                    <h1 id="title">أوقات الصلاة في مدينة <span id="city"></span></h1>
+                </div>
+                <div id="date" style="margin-bottom: 7px;">
+                    <span id="en-year">  </span> <span id="en-month">  </span>  يوم  <span id="day-name"> </span> <span id="ar-day"></span>  <span id="ar-month"></span> <span id="ar-year"></span> هـ  الموافق <span id="en-day"></span> 
+                </div>
+            </div>
+            
+            <div id="time">
+                <div class="pryer-time">
+                    <div class="time-box">
+                        <p class="margin-bottom">الفجر</p>
+                        <p id="fajr"></p>
+                    </div>
+
+                    <div class="time-box">
+                        <p class="margin-bottom">الظهر</p>
+                        <p id="dhuhr"></p>
+                    </div>
+                   
+                    <div class="time-box">
+                        <p class="margin-bottom">المغرب</p>
+                        <p id="maghrib"></p>
+                    </div>
+                    <div class="time-box">
+                        <p class="margin-bottom">منتصف الليل</p>
+                        <p id="midnight"></p>
+                    </div>
+                </div>
+                <div class="pryer-time">
+                    <div class="time-box">
+                        <p class="margin-bottom">الشروق</p>
+                        <p id="sunrise"></p>
+                    </div>
+                    <div class="time-box">
+                        <p class="margin-bottom">العصر</p>
+                        <p id="asr"></p>
+                    </div>
+                    <div class="time-box">
+                        <p class="margin-bottom">العشاء</p>
+                        <p id="isha"></p>
+                    </div>
+                    
+                    <div class="time-box">
+                        <p class="margin-bottom">الثلث الأخير</p>
+                        <p id="lastthird"></p>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div id="selecter">
+                <select id="all-city" >
+                </select>
+            </div>
+           
+        </div>
+
+    </div>
+    
+    
+</body>
+
+<!-- axios Libraries -->
+<script src="./node_modules/axios/dist/axios.min.js"></script>
+
+<!-- pryer JS -->
+<script src="pryer.js"></script>
+
+</html>

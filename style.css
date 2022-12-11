@@ -1,0 +1,136 @@
+:root{
+    --main_color:  rgb(0, 67, 86); 
+    --background-color: rgb(238, 238, 240); 
+    --background-box-color: rgb(247, 247 , 247); 
+    --shadow-color: rgb(224, 223 , 227); 
+    --text_color: rgb(242, 242, 242);
+}
+
+*{
+    margin: 0px;
+}
+
+body{
+    margin: 0px;
+    background-color: var(--background-color); 
+    font-family: 'Tajawal', sans-serif;
+    color:var(--text_color);
+}
+
+
+#background{
+    background-image: url("background.jpg"); 
+    height: 100vh; 
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: right;
+    
+}
+
+#content{
+    width: 40%;
+    height:  100vh;
+    position:absolute;
+    top: 12%;
+    left: 15%;
+    z-index: 1200;
+}
+
+#city-title{
+    width: 60%;
+    text-align: center;
+}
+
+#title{
+    color: var(--main_color);
+    font-weight: 800;
+    text-shadow: -7px 8px 13px rgba(0, 67, 86,0.3);
+}
+
+#date{
+    color: var(--main_color);
+    font-size: 1em;
+    font-weight: 400;
+    margin-top: 70px;
+    text-shadow: -2px 2px 3px rgba(0, 67, 86,0.6);
+}
+
+#time{
+    width:  60%;
+    height: 55%;
+    background-color: var(--background-box-color);
+    box-shadow: 6px 6px 5px rgb(224, 223 , 227) , -6px -6px 5px rgb(224, 223 , 227) ;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    border: none;
+    margin-top: 30px;
+    border-radius: 10px; 
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    text-align: center;
+
+}
+
+.pryer-time {
+    width: 50%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color:  var(--main_color); 
+}
+
+.time-box{
+    width: 60%;
+    height: 15%;
+    background-color:  var(--background-color);
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    font-size: 1.3em;
+    font-weight: 500;
+    box-shadow: 6px 6px 5px rgb(224, 223 , 227) , -6px -6px 5px rgb(224, 223 , 227) ;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+
+}
+
+/* #next{
+    width: 66%;
+    height: 19%;
+    background-color:  rgb(223, 223, 223); 
+    border: solid 4px var(--main_color); 
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    font-size: 1.3em;
+    padding: 10px;
+    font-weight: 500;
+} */
+
+.margin-bottom{
+    margin-bottom: 15px;
+}
+
+#selecter{
+    margin-top: 50px; 
+    margin-left: 120px;
+}
+
+#all-city{
+   width: 40%;
+   height: 50px !important;
+   font-family: 'Tajawal', sans-serif;
+   font-weight: 400;
+   font-size: 1.3em;
+   color: var(--main_color);
+   border:  solid 1.5px var(--main_color);
+   border-radius: 50px !important;
+   padding: 15px !important; 
+   background-color:  var(--background-color);
+   direction: rtl;
+ 
+}
