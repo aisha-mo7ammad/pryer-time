@@ -1,4 +1,0 @@
-[[redirects]]
-   from = "/api/*"
-   to = "http://www.webservice.com/api/:splat"
-   status = 200
